@@ -6,12 +6,21 @@ Build: 1.0
 http://www.andreagalanti.it
 */
 
-$(window).load(function() { 
-	//Preloader 
-	$('#status').delay(300).fadeOut(); 
-	$('#preloader').delay(300).fadeOut('slow');
-	$('body').delay(550).css({'overflow':'visible'});
-})
+// 创建页面加载和超时的Promise
+var pageLoad = new Promise(function(resolve) {
+    $(window).on('load', resolve);
+});
+
+var timeout = new Promise(function(resolve) {
+    setTimeout(resolve, 6000);
+});
+
+// 哪个先完成就隐藏预加载器
+Promise.race([pageLoad, timeout]).then(function() {
+    $('#status').delay(300).fadeOut();
+    $('#preloader').delay(300).fadeOut('slow');
+    $('body').delay(550).css({'overflow':'visible'});
+});
 
 $(document).ready(function() {
 		//animated logo
