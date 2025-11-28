@@ -1,0 +1,735 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Few-shot Learning from Meta-Learning, Statistical Understanding to Applications">
+    <meta name="author" content="">
+
+    <title>(NeurIPS 25 Workshop) LockLLM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+
+    <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/image.css" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body id="home">
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+<!-- FullScreen -->
+<div class="intro-header">
+    <div class="col-xs-12 text-center abcen1">
+        <div style="background-color: rgba(0,0,0,0.5)">
+            <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s" style="text-shadow: 0 0 8px #000000;">
+                🔒Lock-LLM: Prevent Unauthorized Knowledge Use from LLMs</h1>
+
+            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 8px 4px black, 0 0 25px black">
+                Time<a style="color:#00BFA6"><sup>&dagger;</sup></a>: Dec. 6 Sat. 9 a.m. PST </p>
+<!--                Sat. 6 Dec. TBD —  p.m. PST </p>-->
+                Location: Upper Level Room 1AB </p>
+            </h3>
+            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 8px 4px black, 0 0 25px black">
+                <a style="color:white" href="https://neurips.cc/" target="_blank"><b>NeurIPS 2025</b></a> Workshop </p>
+            </h3>
+            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0 0 8px #000000; font-weight:700; font-style: italic; color: #00BFA6; font-size: 40px">
+                <sup style="font-style: normal">&dagger;</sup>Join our all-day happy hour w. snacks & drinks !
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+
+                <li class="menuItem"><a href="#scope">Home</a></li>
+                <li class="menuItem"><a href="#speakers">Speakers</a></li>
+                <li class="menuItem"><a href="#call">Call for Papers</a></li>
+                <li class="menuItem"><a href="#rising-star" style="font-weight:bolder;">Risting Star Award</a></li>
+                <li class="menuItem"><a href="#schedule">Schedule</a></li>
+                <li class="menuItem"><a href="#organizers">Organizers</a></li>
+                <li class="menuItem"><a href="#students">Students</a></li>
+                <li class="menuItem"><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Scope -->
+<div id="scope" class="content-section-a" style="border-top: 0">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="wow fadeInRightBig" data-animation-delay="200">
+                <h3 class="section-heading">Workshop Summary</h3>
+                <p class="lead" style="text-align:justify">
+                    Large Language Models (LLMs) have emerged as transformative tools across research and industry,
+                    revolutionizing how we interact with information. However, their immense capabilities bring critical
+                    security challenges—the same features that drive innovation can be exploited for malicious purposes
+                    through unauthorized distillation, fine-tuning, compression, or editing. These vulnerabilities pose
+                    severe threats including intellectual property theft, generation of sophisticated disinformation,
+                    bypass of safety alignments, and erosion of user trust in AI systems.
+                    <br>
+                    <br>
+                    This workshop aims to bring together researchers and practitioners from academia
+                    and industry who are advancing the frontiers of LLM security and protection. We seek to confront the
+                    unauthorized use of LLMs head-on by exploring novel and robust mechanisms designed to make these
+                    models inherently resistant to exploitation while maintaining their beneficial capabilities.
+                    The workshop also hosts the 2025 TrustAI Rising Star Award.
+                    <br>
+                    <br>
+                    Topics of interest include, but are not limited to:<br>
+                    1. Un-Distillable LLMs: Preventing unauthorized model replication and intellectual property theft<br>
+                    2. Un-Finetunable LLMs: Resisting malicious parameter updates and behavior alterations<br>
+                    3. Un-Compressible LLMs: Maintaining model integrity against unauthorized compression<br>
+                    4. Un-Editable LLMs: Safeguarding against knowledge tampering and misinformation injection<br>
+                    5. Un-Usable LLMs: Ensuring traceability and preventing misuse through watermarking and verification<br>
+                </p>
+
+            </div>
+
+            <h4 style="color: #f58025; font-style: italic; text-align: center; font-size: 24px; margin: 30px 0;">
+                Call for Applications: 2025 TrustAI Rising Star Award - Apply by October 31, 2025!
+            </h4>
+
+        </div>
+    </div>
+</div>
+
+<!-- Speakers -->
+<style>
+    .speaker-img {
+        width: 145px !important;
+        height: 145px !important;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+</style>
+
+<div id="speakers" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Keynote Speakers <a style="color:#929292;">(A-Z order)</a></h3>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/yu.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://ych133.github.io/">Yu Cheng</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The Chinese University of Hong Kong</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="400">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/charles.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://outshift.cisco.com/blog/author/charles-fleming">Charles Fleming</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Cisco Research</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="1000">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/junyuan.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://jyhong.gitlab.io/">Junyuan Hong</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Massachusetts General Hospital & Harvard Medical School</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="400">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/steven.jpeg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://hireez.com/">Steven Jiang</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>HireEZ</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="600">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/bhavya.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://people.llnl.gov/kailkhura1">Bhavya Kailkhura</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Lawrence Livermore National Laboratory</i></center>
+                </h5>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="800">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/zico.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://zicokolter.com/">Zico Kolter</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Carnegie Mellon University</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="1000">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/huan.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://faculty.engineering.asu.edu/huanliu">Huan Liu</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Arizona State University</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="1000">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/speaker/dawn.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://dawnsong.io/">Dawn Song</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of California, Berkeley</i></center>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Call for Papers -->
+<div id="call" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Call for Papers</h3>
+
+            <p class="lead" style="text-align:justify">
+                The rapid advancement of Large Language Models (LLMs) has brought unprecedented capabilities alongside critical security challenges. The Lock-LLM workshop aims to confront the unauthorized use of LLMs head-on by exploring novel and robust mechanisms designed to make these models inherently resistant to exploitation while maintaining their beneficial capabilities. We invite high-quality submissions that advance our understanding of LLM protection mechanisms and address the dual-use nature of these technologies.
+            </p>
+
+            <h4 class="section-heading">Topics of Interest</h4>
+            <p class="lead" style="text-align:justify">
+                We encourage submissions on topics including, but not limited to:
+            </p>
+            <ul class="lead" style="text-align:justify">
+                <li><strong>Un-Distillable LLMs:</strong> Methods to prevent unauthorized model replication through distillation, including watermarking approaches, noise injection, adversarial perturbations, and system-level controls for intellectual property protection</li>
+                <li><strong>Un-Finetunable LLMs:</strong> Techniques to prevent unauthorized parameter updates, including gradient-blocking mechanisms, non-differentiable components, and domain-specific fine-tuning restrictions</li>
+                <li><strong>Un-Compressible LLMs:</strong> Approaches to maintain model integrity against unauthorized compression, quantization, and pruning, including degradation mechanisms and post-hoc identification methods</li>
+                <li><strong>Un-Editable LLMs:</strong> Safeguards against malicious knowledge editing, misinformation injection, and fact tampering, including detection-based approaches and tamper-resistant behaviors</li>
+                <li><strong>Un-Usable LLMs:</strong> Watermarking, fingerprinting, and verification mechanisms for ownership verification, usage tracking, and preventing model substitution attacks</li>
+                <li><strong>Theoretical Foundations:</strong> Information-theoretic limits, cryptographic protocols, and formal guarantees for LLM protection</li>
+                <li><strong>Evaluation Frameworks:</strong> Benchmarks, metrics, and methodologies for assessing LLM security, robustness, and protection effectiveness</li>
+                <li><strong>Real-world Applications:</strong> Case studies, deployment strategies, and practical considerations for secure LLM systems in production environments</li>
+                <li><strong>Ethical and Societal Implications:</strong> Addressing dual-use concerns, access equity, and responsible innovation in LLM security</li>
+            </ul>
+
+            <h4 class="section-heading">Submission Guidelines</h4>
+            <p class="lead" style="text-align:justify">
+                Papers can be up to <strong>6 pages</strong> (excluding references and supplementary material).
+                All submissions must use the <a href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip" style="color:#f58025;"><u>NeurIPS 2025 LaTeX style file</u></a>.
+                Neither the paper checklist nor a broader impact statement are required for workshop submissions.
+                Papers should be submitted through OpenReview.
+                All submissions will undergo double-blind peer review.
+                Authors must ensure their submissions are properly anonymized.
+                We welcome submissions currently under review at other venues.
+                Papers accepted at the main NeurIPS 2025 conference will go through a light-touch review solely to assess their relevance, without a second peer review process.
+                Authors of accepted papers may choose whether to include their work in a formal proceedings published by Springer.
+            </p>
+
+            <h4 class="section-heading">Important Dates</h4>
+            <table class="table" style="width:70%; margin-left:15%">
+                <tr>
+                    <td><strong>Paper Submission Deadline</strong></td>
+                    <td>September 15, 2025, AoE</td>
+                </tr>
+                <tr class="success">
+                    <td><strong>Notification of Acceptance</strong></td>
+                    <td>October 1, 2025, AoE</td>
+                </tr>
+                <tr>
+                    <td><strong>Camera-Ready Deadline</strong></td>
+                    <td>October 20, 2025, AoE</td>
+                </tr>
+                <tr class="success">
+                    <td><strong>Workshop Date</strong></td>
+                    <td>December 6, 2025</td>
+                </tr>
+            </table>
+
+            <h4 class="section-heading">Awards</h4>
+            <p class="lead" style="text-align:justify">
+                Outstanding submissions will be recognized with <strong>Best Paper</strong> and <strong>Runner-up Best Paper</strong> awards. Winners will present their work in dedicated oral, in-person sessions.
+            </p>
+
+            <div style="text-align:center; margin-top:40px">
+                <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop/Lock-LLM" class="btn btn-primary btn-lg" style="background-color:#f58025; border-color:#f58025">
+                    <i class="fa fa-external-link"></i> Submit
+                </a>
+            </div>
+
+<!--            <div style="text-align:center; margin-top:20px">-->
+<!--                <p class="lead">-->
+<!--                    For questions about submissions, please contact: <a href="mailto:tianlong@cs.unc.edu">tianlong@cs.unc.edu</a> or <a href="mailto:angliece@umd.edu">angliece@umd.edu</a>-->
+<!--                </p>-->
+<!--            </div>-->
+
+        </div>
+    </div>
+</div>
+
+<!-- Rising Star Award -->
+<div id="rising-star" class="content-section-a" style="background-color: #f8f8f8;">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">2025 TrustAI Rising Star Award Announcement</h3>
+
+            <p class="lead" style="text-align:justify">
+                The TrustAI Rising Star Award was established to honor early-career researchers (senior Ph.D. students and postdoctoral fellows) who have made significant contributions to the trustworthiness, security, and responsible use of large language models. In 2025, the TrustAI Rising Star Award will be hosted by the Lock-LLM Workshop at NeurIPS 2025, and two researchers will be selected and awarded. The awardees will receive certificates and give oral, in-person presentations of their work at the workshop to showcase their research, share insights, and connect with other researchers in the field.
+            </p>
+
+            <div style="background-color:white; padding:30px; border-radius:10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom:30px">
+                <h4 class="section-heading">Call for Year 2025 TrustAI Rising Star Award Applications</h4>
+
+                <p class="lead">
+                    <strong>Awards will be announced in early December</strong><br>
+                    Award talks and ceremonies will take place at <strong>The 1st Lock-LLM Workshop</strong>, co-located at <strong>NeurIPS 2025</strong>
+                    <br><br>
+                    <strong>Candidate materials due</strong>: October 31, 2025
+                    <br>
+                    <strong>Reference letters due</strong>: November 7, 2025
+                </p>
+
+            </div>
+
+            <h4 class="section-heading">Objective</h4>
+            <p class="lead" style="text-align:justify">
+                At the 2025 NeurIPS Lock-LLM Workshop, the TrustAI Rising Star Award will be presented to <strong>two young researchers</strong> who have made significant contributions to the trustworthiness, security, and responsible use of large language models. The awardees will give a presentation about their research at the workshop. We strongly encourage researchers from minority or underrepresented groups to apply.
+            </p>
+
+            <h4 class="section-heading">Domains of Interest</h4>
+            <p class="lead" style="text-align:justify">
+                We welcome applicants working on, but not limited to, the following topics:
+            </p>
+            <ul class="lead" style="text-align:justify">
+                <li>Security, integrity, and robustness of LLMs</li>
+                <li>Defenses against unauthorized distillation, fine-tuning, compression, editing, or misuse</li>
+                <li>Watermarking, ownership verification, and intellectual property protection</li>
+                <li>Dual-use risk mitigation for generative models</li>
+                <li>Trustworthy AI and ethics in the context of LLM deployment</li>
+                <li>Robustness certification and verification for LLMs</li>
+                <li>Privacy and security in LLM-based systems</li>
+                <li>Novel applications or methods advancing trustworthy and secure LLMs</li>
+            </ul>
+
+            <h4 class="section-heading">Eligibility and Requirements</h4>
+            <ul class="lead" style="text-align:justify">
+                <li>Senior PhD students enrolled in a PhD program <strong>before December 2022</strong>, or</li>
+                <li>Researchers holding postdoctoral positions who obtained their PhD <strong>after April 2023</strong></li>
+            </ul>
+
+            <h4 class="section-heading">Application Materials</h4>
+            <p class="lead" style="text-align:justify">
+                Applicants are required to submit the following via <a href="https://forms.gle/zAjGoEbNQWfomTzh8" style="color:orange;font-weight: bold"><u>this form</u></a> (except for recommendation letters):
+            </p>
+            <ol class="lead" style="text-align:justify; list-style-type: lower-alpha;">
+                <li><strong>CV</strong>, including a list of publications</li>
+                <li><strong>Research statement</strong> (up to 2 pages, single column, excluding references) describing your research accomplishments and future directions</li>
+<!--                <li><strong>5-minute video</strong> summarizing your research</li>-->
+                <li><strong>Two recommendation letters</strong>, to be uploaded by your referees before <strong>November 7, 2025 (AoE)</strong> via <a href="https://forms.gle/R1Uk5CkhSv5HYLeWA" style="color:orange;font-weight: bold"><u>this form</u></a></li>
+            </ol>
+
+            <div style="text-align:center; margin-top:40px">
+                <a href="https://forms.gle/zAjGoEbNQWfomTzh8" class="btn btn-primary btn-lg" style="background-color:#f58025; border-color:#f58025">
+                    <i class="fa fa-star"></i> Submit Application
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Schedule -->
+<div id="schedule" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Schedule (PST)</h3>
+
+            <h4 style="color: #f58025; font-weight: bold; font-style: italic; text-align: center; font-size: 24px; margin: 30px 0;">☕ All-day happy hour: Free drink & snack per participant! <a href="https://forms.gle/zAjGoEbNQWfomTzh8" style="color:grey">(Alcohol for 21+ only)</a></h4>
+
+        </div>
+        <table class="table" style="width:100%">
+            <tr class="info">
+                <td><strong>Sessions</strong></td>
+                <td><strong>Title</strong></td>
+                <td><strong>Host/Speaker</strong></td>
+            </tr>
+            <tr>
+                <td><nobr>8:20-8:50</nobr></td>
+                <td><strong>Registration / Poster Setup</strong></td>
+                <td>-</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>8:50-9:00</nobr></td>
+                <td><strong>Opening Remarks</strong></td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><nobr>9:00-10:00</nobr></td>
+                <td><strong>Keynote 1</strong></td>
+                <td>Yu Cheng (CUHK)</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>10:00-11:00</nobr></td>
+                <td><strong>Keynote 2</strong></td>
+                <td>Junyuan Hong (Massachusetts General Hospital & Harvard Medical School)</td>
+            </tr>
+            <tr>
+                <td><nobr>11:00-12:00</nobr></td>
+                <td><strong>Keynote 3</strong></td>
+                <td>Huan Liu (Arizona State University)</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>12:00-12:30</nobr></td>
+                <td><strong>Lunch + Poster Session 1</strong></td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><nobr>12:30-13:30</nobr></td>
+                <td><strong>Keynote 4</strong></td>
+                <td>Bhavya Kailkhura (Lawrence Livermore National Laboratory)</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>13:30-14:30</nobr></td>
+                <td><strong>Keynote 5</strong></td>
+                <td>Charles Fleming (Cisco Research)</td>
+            </tr>
+            <tr>
+                <td><nobr>14:30-15:00</nobr></td>
+                <td><strong>Keynote 6</strong></td>
+                <td>Dawn Song (University of California, Berkeley)</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>15:00-16:00</nobr></td>
+                <td><strong>Keynote 7</strong></td>
+                <td>Zico Kolter (Carnegie Mellon University)</td>
+            </tr>
+            <tr>
+                <td><nobr>16:00-16:30</nobr></td>
+                <td><strong>Keynote 8</strong></td>
+                <td>Steven Jiang (HireEZ)</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>16:30-16:40</nobr></td>
+                <td><strong>Raising Star Intro and Award</strong></td>
+                <td>Yu Cheng (CUHK)</td>
+            </tr>
+            <tr>
+                <td><nobr>16:40-16:50</nobr></td>
+                <td><strong>Rising Star Talk 1</strong></td>
+                <td>Speaker A</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>16:50-17:00</nobr></td>
+                <td><strong>Rising Star Talk 2</strong></td>
+                <td>Speaker B</td>
+            </tr>
+            <tr>
+                <td><nobr>17:00-17:10</nobr></td>
+                <td><strong>Closing Remarks</strong></td>
+                <td>-</td>
+            </tr>
+            <tr class="success">
+                <td><nobr>17:10-</nobr></td>
+                <td><strong>Social Event (TBD)</strong></td>
+                <td>-</td>
+            </tr>
+        </table>
+
+
+    </div>
+</div>
+
+
+<!-- Organizers -->
+<div id="organizers" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Organizers</h3>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/tianlong.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://tianlong-chen.github.io/">Tianlong Chen</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/ang.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://www.ang-li.com/">Ang Li</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Maryland, College Park</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/furong.jpeg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://furong-huang.com/">Furong Huang</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Maryland, College Park</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/avi.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://www.avischwarzschild.com/">Avi Schwarzschild</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/neil.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://people.duke.edu/~zg70/">Neil Zhenqiang Gong</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Duke University</i></center>
+                </h5>
+            </div>
+
+            <!-- Clear float to ensure next element starts from left -->
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/bo.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://aisecure.github.io/">Bo Li</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Illinois Urbana-Champaign</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/Yuxiong.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://www.snowflake.com/en/blog/authors/yuxiong-he/">Yuxiong He</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Snowflake</i></center>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Organizers -->
+<div id="students" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Student Organizers</h3>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/pingzhi.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://pingzhili.github.io/">Pingzhi Li</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/GuohengSun.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://s1gh.alphaxiv.io/">Guoheng Sun</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Maryland, College Park</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/zt.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://zhen-tan-dmml.github.io/">Zhen Tan</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Arizona State University</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/ziyao.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://ziyaow-about.netlify.app/">Ziyao Wang</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Maryland, College Park</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="speaker-img" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/song_wang.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://songw-sw.github.io/">Song Wang</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Virginia</i></center>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="contacts" class="content-section-c ">
+    <!-- Contacts -->
+    <div class="container">
+        <div class="row">
+
+            <!--div class="col-sm-6 pull-right wow fadeInRightBig">
+                <img class="img-responsive " src="img/ipad.png" alt="">
+            </div-->
+
+            <div class="wow fadeInLeftBig" data-animation-delay="200">
+                <h3 class="section-heading" style="color:white">Contacts</h3>
+                <!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
+                <p class="lead" style="text-align:left;color:white">
+                    Contact the Organizing Committee: tianlong@cs.unc.edu, angliece@umd.edu
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div>
+                    <div class="morph-button ">
+                        <button type="button"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer>
+
+</footer>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<!-- StikyMenu -->
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.navbar-default').stickUp();
+
+        });
+    });
+
+</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/classie.js"></script>
+<script src="js/uiMorphingButton_inflow.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+</body>
+
+</html>
+ 
